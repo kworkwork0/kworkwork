@@ -56,7 +56,7 @@ StandaloneHTMLBuilder.supported_image_types = [
     'image/png',
     'image/jpeg'
 ]
-html_theme = "sphinx_rtd_theme"
+html_theme = 'sphinx_rtd_theme'
 # html_logo = "/static/photo2.png"
 
 # Настройка параметров оформления для темы Sphinx RTD
@@ -66,11 +66,11 @@ html_theme_options = {
     # Показывать версию проекта
     'display_version': True,
     # Заголовок сайта (если не указан 'logo_only')
-    'collapse_navigation': False,
+    'collapse_navigation': True,
     # Отображать навигацию во всплывающем окне при наведении
     'sticky_navigation': True,
     # Отключить автоматическое раскрытие пунктов навигации
-    'navigation_depth': 3,
+    'navigation_depth': 4,
     # Отображать элементы навигации, которые обычно скрыты
     'includehidden': True,
     # Показывать только заголовки в навигации
