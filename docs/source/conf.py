@@ -13,9 +13,9 @@ from sphinx.builders.html import StandaloneHTMLBuilder
 
 # -- Project information -----------------------------------------------------
 
-project = 'NAU ENGINE'
+project = 'Kwork'
 copyright = '{}'.format(datetime.datetime.now().year)
-author = 'NAU ENGINE'
+author = 'Kwork'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -80,8 +80,6 @@ html_theme_options = {
     # Добавить пользовательскую CSS для темы
 
 
-    # Добавить ссылку на исходный код на GitHub
-    'github_url': 'https://github.com/Bioritm/rtd01/tree/main',
     # Добавить иконку GitHub в навигационной панели
     'github_user': 'username',
     'github_repo': 'project',
