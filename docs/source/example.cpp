@@ -1,6 +1,6 @@
 // Animchar render component
 //
-AnimcharRendComponent::AnimcharRendComponent() :
+AnimcharRendComponent::AnimcharRendComponent():
   lodres(NULL),
   scene(NULL),
   sceneOwned(true),
