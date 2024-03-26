@@ -119,17 +119,6 @@ html_theme_options = {
 }
 
 
-
-    # Добавить иконку GitHub в навигационной панели
-    'github_user': 'username',
-    'github_repo': 'project',
-    'github_type': 'star',
-    'github_banner': True,
-}
-
-
-
-
 # -- Extension configuration -------------------------------------------------
 
 # autodoc_inherit_docstrings = False
