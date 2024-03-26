@@ -76,6 +76,7 @@ html_theme_options = {
     "use_edit_page_button": False,
 }
 
+
 html_theme_options = {
     "extra_navbar": "<strong>Extra Navigation Bar</strong>",
 }
