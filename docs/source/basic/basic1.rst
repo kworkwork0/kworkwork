@@ -9,9 +9,13 @@
 .. image:: docs/static/pic1.jpg
    :alt: Интерфейс
 
+
+
 .. list-table:: Описание интерфейса
-   :header-rows: 1
-   :class: longtable
+    :widths: 5 10 40
+    :header-rows: 1
+    :stub-columns: 1
+    :class: longtable
 
    * - **Цифра**
      - **Наименование**

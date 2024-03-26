@@ -67,7 +67,7 @@ html_theme_options = {
 }
 
 html_title = "Your Title"
-html_logo = "path/to/logo.png"
+html_logo = "static/pic1.jpg"
 
 
 html_theme_options = {
