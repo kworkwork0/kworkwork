@@ -118,7 +118,6 @@ html_theme_options = {
     "search_bar_position": "sidebar",  # Можно использовать "top" для верхней панели
 }
 
-
 # -- Extension configuration -------------------------------------------------
 
 # autodoc_inherit_docstrings = False
