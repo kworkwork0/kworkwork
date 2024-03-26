@@ -38,7 +38,6 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -56,40 +55,68 @@ StandaloneHTMLBuilder.supported_image_types = [
     'image/png',
     'image/jpeg'
 ]
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_book_theme"
 # html_logo = "/static/photo2.png"
 
-# Настройка параметров оформления для темы Sphinx RTD
+# Настройка параметров оформления для темы
 html_theme_options = {
-    # Отображать только логотип, без заголовка
-    'logo_only': True,
-    # Показывать версию проекта
-    'display_version': True,
-    # Заголовок сайта (если не указан 'logo_only')
-    'collapse_navigation': True,
-    # Отображать навигацию во всплывающем окне при наведении
-    'sticky_navigation': True,
-    # Отключить автоматическое раскрытие пунктов навигации
-    'navigation_depth': -1,
-    # Отображать элементы навигации, которые обычно скрыты
-    'includehidden': True,
-    # Показывать только заголовки в навигации
-    'titles_only': False,
-    # Добавить favicon в HTML-документацию
-    'favicon': 'path/to/favicon.ico',
-    # Добавить пользовательскую CSS для темы
+    "repository_url": "https://github.com/your/repo",
+    "use_repository_button": True,
+    "use_issues_button": True,
+    "home_page_in_toc": True,
+}
+
+html_title = "Your Title"
+html_logo = "path/to/logo.png"
 
 
+html_theme_options = {
+    "use_download_button": False,
+    "use_fullscreen_button": False,
+    "use_edit_page_button": False,
+}
 
-# These folders are copied to the documentation's HTML output
-html_static_path = ['static']
+html_theme_options = {
+    "extra_navbar": "<strong>Extra Navigation Bar</strong>",
+}
 
+html_theme_options = {
+    "font_family": "Arial, sans-serif",
+    "head_font_family": "Georgia, serif",
+    "code_font_family": "Monaco, 'Courier New', monospace",
+    "css_override": "body { font-size: 16px; }",  # Дополнительные пользовательские стили
+}
 
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
-html_css_files = [
-    'css/custom.css',
-]
+html_theme_options = {
+    "page_width": "90%",
+}
+
+html_theme_options = {
+    "body_bg_color": "#FFFFFF",
+    "text_color": "#000000",
+}
+
+html_theme_options = {
+    "show_navbar": True,
+    "navbar_links": {
+        "Home": "index.html",
+        "About": "about.html",
+        "Contact": "contact.html",
+    },
+}
+
+html_theme_options = {
+    "social_icons": [
+        ("GitHub", "https://github.com/youraccount"),
+        ("Twitter", "https://twitter.com/youraccount"),
+        ("LinkedIn", "https://www.linkedin.com/in/youraccount"),
+    ],
+}
+
+html_theme_options = {
+    "use_search_bar": True,
+    "search_bar_position": "sidebar",  # Можно использовать "top" для верхней панели
+}
 
 
 
