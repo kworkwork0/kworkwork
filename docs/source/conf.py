@@ -70,7 +70,7 @@ html_theme_options = {
     # Отображать навигацию во всплывающем окне при наведении
     'sticky_navigation': True,
     # Отключить автоматическое раскрытие пунктов навигации
-    'navigation_depth': 4,
+    'navigation_depth': -1,
     # Отображать элементы навигации, которые обычно скрыты
     'includehidden': True,
     # Показывать только заголовки в навигации
@@ -78,6 +78,18 @@ html_theme_options = {
     # Добавить favicon в HTML-документацию
     'favicon': 'path/to/favicon.ico',
     # Добавить пользовательскую CSS для темы
+
+
+
+# These folders are copied to the documentation's HTML output
+html_static_path = ['static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
+
 
 
     # Добавить иконку GitHub в навигационной панели
