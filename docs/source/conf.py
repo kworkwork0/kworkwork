@@ -26,7 +26,7 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_book_theme',
+    'guzzle.sphinx.theme',
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.napoleon',
@@ -55,68 +55,67 @@ StandaloneHTMLBuilder.supported_image_types = [
     'image/png',
     'image/jpeg'
 ]
-html_theme = "sphinx_book_theme"
-# html_logo = "/static/photo2.png"
+
 
 # Настройка параметров оформления для темы
+import guzzle_sphinx_theme
+
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
+
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
+
+# Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
-    "repository_url": "https://github.com/your/repo",
-    "use_repository_button": True,
-    "use_issues_button": True,
-    "home_page_in_toc": True,
+    # Set the name of the project to appear in the sidebar
+    "project_nav_name": "Project Name",
 }
 
-html_title = "Your Title"
-html_logo = "static/pic1.jpg"
+import guzzle_sphinx_theme
 
+html_theme_path = guzzle_sphinx_theme.html_theme_path()
+html_theme = 'guzzle_sphinx_theme'
 
+# Register the theme as an extension to generate a sitemap.xml
+extensions.append("guzzle_sphinx_theme")
+
+# Guzzle theme options (see theme.conf for more information)
 html_theme_options = {
-    "use_download_button": False,
-    "use_fullscreen_button": False,
-    "use_edit_page_button": False,
-}
 
+    # Set the path to a special layout to include for the homepage
+    "index_template": "special_index.html",
 
-html_theme_options = {
-    "extra_navbar": "<strong>Extra Navigation Bar</strong>",
-}
+    # Set the name of the project to appear in the left sidebar.
+    "project_nav_name": "Project Name",
 
-html_theme_options = {
-    "font_family": "Arial, sans-serif",
-    "head_font_family": "Georgia, serif",
-    "code_font_family": "Monaco, 'Courier New', monospace",
-    "css_override": "body { font-size: 16px; }",  # Дополнительные пользовательские стили
-}
+    # Set your Disqus short name to enable comments
+    "disqus_comments_shortname": "my_disqus_comments_short_name",
 
-html_theme_options = {
-    "page_width": "90%",
-}
+    # Set you GA account ID to enable tracking
+    "google_analytics_account": "my_ga_account",
 
-html_theme_options = {
-    "body_bg_color": "#FFFFFF",
-    "text_color": "#000000",
-}
+    # Path to a touch icon
+    "touch_icon": "",
 
-html_theme_options = {
-    "show_navbar": True,
-    "navbar_links": {
-        "Home": "index.html",
-        "About": "about.html",
-        "Contact": "contact.html",
-    },
-}
+    # Specify a base_url used to generate sitemap.xml links. If not
+    # specified, then no sitemap will be built.
+    "base_url": "",
 
-html_theme_options = {
-    "social_icons": [
-        ("GitHub", "https://github.com/youraccount"),
-        ("Twitter", "https://twitter.com/youraccount"),
-        ("LinkedIn", "https://www.linkedin.com/in/youraccount"),
-    ],
-}
+    # Allow a separate homepage from the master_doc
+    "homepage": "index",
 
-html_theme_options = {
-    "use_search_bar": True,
-    "search_bar_position": "sidebar",  # Можно использовать "top" для верхней панели
+    # Allow the project link to be overriden to a custom URL.
+    "projectlink": "http://myproject.url",
+
+    # Visible levels of the global TOC; -1 means unlimited
+    "globaltoc_depth": -1,
+
+    # If False, expand all TOC entries
+    "globaltoc_collapse": False,
+
+    # If True, show hidden TOC entries
+    "globaltoc_includehidden": False,
 }
 
 # -- Extension configuration -------------------------------------------------
